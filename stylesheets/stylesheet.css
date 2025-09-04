@@ -1,0 +1,136 @@
+@font-face {
+    font-family: 'Tw Cen Condensed';
+    src: url('../fonts/tw-cen-mt-condensed.ttf');
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Tw Cen Condensed';
+    font-size: 25px;
+    background-color: black;
+    color: white;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    background-color: blue;
+    position: relative;
+    text-align: center;
+}
+
+header h1{
+    margin: 0;
+    padding: 1.5%;
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    height: 65px;
+    background-color: blue;
+    text-align: center;
+}
+
+footer p{
+    margin: 0;
+    padding: 1%;
+}
+
+a{
+    text-decoration: none;
+    color: cyan;
+}
+
+a:hover{
+    color: gold;
+}
+
+ul{
+    list-style-type: none;
+}
+
+#schoolinfo{
+    width: 70%;
+}
+
+#subjects{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.subject{
+    width: 30%;
+    flex: 1;
+}
+
+#holiday{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+#rooster{
+    height: 600px;
+}
+
+.period{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+}
+
+#hobbies{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.hobby {
+    display: flex;           /* maak dit een flex-container */
+    flex-direction: row;     /* horizontale layout */
+    justify-content: space-between; /* optioneel, verdeelt tekst en afbeelding */
+    align-items: center;     /* verticaal centreren */
+    flex: 1; 
+    height: 330px; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    gap: 20px;               /* ruimte tussen tekst en afbeelding */
+}
+
+.hobby img {
+    max-width: 150px;          
+    height: auto;
+}
+
+#profile{
+    width: 250px;
+    height: auto;
+    margin: 10px auto;
+    position: relative;
+    left: 20%;
+}
+
+#baarle{
+    width: 300px;
+    height: auto;
+    margin: 10px auto;
+    position: relative;
+    left: 25%;
+}
+
+#music{
+    position: relative;
+    left: 50%;
+}
+
+#choir{
+    position: relative;
+    left: 40%;
+}
