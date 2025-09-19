@@ -21,12 +21,12 @@
         <main>
             <article>
                 <h1>Welkom op deze pagina! Op deze site kan je gegevens vinden over mij en de school waar ik op zit.</h1>
-                <p>Je kan kijken naar wat ik geleerd heb op school in het 1ste leerjaar en je kan informatie over mij vinden.</p>
+                <p>Je kan kijken naar wat ik geleerd heb op school in het <span class="belangrijk">1ste leerjaar</span> en je kan informatie over mij vinden.</p>
             </article>
 
             <section id="school">
                 <article id="schoolinfo">
-                    <h1>Wat leer je in leerjaar 1?</h1>
+                    <h1><span class="belangrijk">Wat leer je in leerjaar 1?</span></h1>
                     <p>In leerjaar 1 leer je basic HTML, CSS, PHP, JavaScript, C# en SQL. Je leert eigenlijk gewoon de meest basic dingen van de opleiding.
                     Je leert ook samenwerken, communiceren en professioneel werken. Ik heb ook gehoord van andere studenten dat je microbit heb geleerd, maar dat heb ik niet gehad want ik zat niet in blok A.</p>
                 </article>
@@ -81,16 +81,16 @@
                     <article class="period">
                         <h1>Verdeling schooljaar</h1>
                         <p>Het schooljaar is verdeeld in 2 blokken van 16 weken. Voor de hele opleiding heb je 8 blokken, blok A tot H. In blok D ga je stage lopen, en je krijgt ook keuzedelen dat je bijvoorbeeld games kan leren bouwen.</p>
-                        <p>Je hebt ook de mogelijkheid om de opleiding te versnellen door middel als je de opdrachten snel af hebt. En dan ben je 1 jaar eerder klaar met school.</p>
+                        <p><span class="belangrijk">Je hebt ook de mogelijkheid om de opleiding te versnellen door middel als je de opdrachten snel af hebt. En dan ben je 1 jaar eerder klaar met school.</span></p>
                     </article>
 
                     <article class="period">
                         <h1>Vakanties</h1>
                         <ul>
-                            <li>#1 Herfstvakantie: 11 oktober 2025 - 19 oktober 2025</li><br>
-                            <li>#2 Kerstvakantie: 20 december 2025 - 4 januari 2026</li><br>
-                            <li>#3 Voorjaarsvakantie: 14 februari 2026 - 22 februari 2026</li><br>
-                            <li>#4 Meivakantie: 25 april 2026 - 3 mei 2026</li><br>
+                            <li>#1 Herfstvakantie: 11 oktober 2025 - 19 oktober 2025</li>
+                            <li>#2 Kerstvakantie: 20 december 2025 - 4 januari 2026</li>
+                            <li>#3 Voorjaarsvakantie: 14 februari 2026 - 22 februari 2026</li>
+                            <li>#4 Meivakantie: 25 april 2026 - 3 mei 2026</li>
                             <li>#5 Zomervakantie: 11 juli 2026 - 23 augustus 2026</li>
                         </ul>
                     </article>
@@ -110,12 +110,12 @@
 
                 <article id="intro">
                     <h1>Hier kan je informatie vinden over mij:</h1>
-                    <p>Mijn naam is Daan Fokkema en ik ben een student aan Curio Breda. Ik ben 18 jaar oud en ik zit in het 2de leerjaar van de opleiding Software Developer.</p>
-                    <p>In mijn vrije tijd hou ik van gamen, programmeren, luisteren naar muziek, zingen, met dieren omgaan en koken/bakken.</p>
-                    <p>Ik ben geboren in 2007, ik woon in Rijen met mijn moeder en mijn 2 katten. Elk weekend ben ik in Ulicoten bij mijn tante en elke vrijdag ga ik naar het koor.</p>
-                    <img id="profile" src="images/daanendex.JPG" alt="Profielfoto Daan">
+                        <p>Mijn naam is Daan Fokkema en ik ben een student aan Curio Breda. Ik ben 18 jaar oud en ik zit in het 2de leerjaar van de opleiding Software Developer.</p>
+                        <p>In mijn vrije tijd hou ik van gamen, programmeren, luisteren naar muziek, zingen, met dieren omgaan en koken/bakken.</p>
+                        <p>Ik ben geboren in 2007, ik woon in Rijen met mijn moeder en mijn 2 katten. Elk weekend ben ik in Ulicoten bij mijn tante en elke vrijdag ga ik naar het koor.</p>
+                        <img id="profile" src="images/daanendex.JPG" alt="Profielfoto Daan">
                     <video id="choir" width="640" height="360" controls autoplay>
-                        <source src="images/koor.MP4" type="video/mp4">
+                        <source src="images/koor.mp4" type="video/mp4">
                     </video>
                 </article>
 
@@ -123,27 +123,39 @@
                     <h1>Hobby's</h1>
                         <div id="hobbies">
                             <div class="hobby">
-                            <h2>Gamen</h2>
-                            <p>Ik vind gamen leuk, en ik speel vooral spelletjes op de telefoon, zoals Piano Tiles 2, Roblox en Minecraft. In het kopje Media kan je mijn YouTube kanalen vinden.</p>
+                                <h2>Gamen</h2>
+                                <div class="pagetext">
+                                <p>Ik vind gamen leuk<span class="dots">...</span><span class="more">, en ik speel vooral spelletjes op de telefoon, zoals Piano Tiles 2, Roblox en Minecraft. In het kopje Media kan je mijn YouTube kanalen vinden.</span></p>
+                                <button onclick="togglePageText(this)">Toon meer</button>
+                            </div>
                             </div>
                             <div class="hobby">
-                            <h2>Programmeren</h2>
-                            <p>Ik programmeer graag in verschillende programmeertalen, zoals C#, PHP en HTML. Ik vind het leuk om nieuwe dingen te leren en mijn vaardigheden te verbeteren. In Roblox ben ik ook bezig met mijn game te maken.</p>
+                                <h2>Programmeren</h2>
+                                <div class="pagetext">
+                                <p>Ik programmeer graag <span class="dots">...</span><span class="more"> in verschillende programmeertalen, zoals C#, PHP en HTML. Ik vind het leuk om nieuwe dingen te leren en mijn vaardigheden te verbeteren. In Roblox ben ik ook bezig met mijn game te maken.</span></p>
+                                <button onclick="togglePageText(this)">Toon meer</button>
+                            </div>
                             </div>
                             <div class="hobby">
-                                <div id="text-music">
                                 <h2>Muziek</h2>
-                                <p>Ik luister graag naar muziek en zing vaak. Mijn favoriete muziekgenres zijn pop en jazz. Mijn favoriete artiesten zijn Amy Winehouse, Lady Gaga, Adele, Mariah Carey en Celine Dion.</p>
-                                </div>
-                            <img id="gaga" src="images/gaga.png" alt="Lady Gaga">
+                                <div class="pagetext">
+                                <p>Ik luister graag naar muziek en zing vaak<span class="dots">...</span><span class="more">. Mijn favoriete muziekgenres zijn pop en jazz. Mijn favoriete artiesten zijn Amy Winehouse, Lady Gaga, Adele, Mariah Carey en Celine Dion.</span></p>
+                                <button onclick="togglePageText(this)">Toon meer</button>
                             </div>
-                            <div class="hobby">
-                            <h2>Dieren</h2>
-                            <p>Ik hou van dieren, vooral van honden en katten. Ik heb zelf 2 katten en mijn tante heeft 2 honden en 2 katten.</p>
                             </div>
-                            <div class="hobby">
-                            <h2>Koken/Bakken</h2>
-                            <p>Ik vind het leuk om te koken en te bakken. Ik ben het beste in het bakken, vooral koekjes voor het koor.</p>
+                                <div class="hobby">
+                                <h2>Dieren</h2>
+                                <div class="pagetext">
+                                <p>Ik hou van<span class="dots">...</span><span class="more"> dieren, vooral van honden en katten. Ik heb zelf 2 katten en mijn tante heeft 2 honden en 2 katten.</span></p>
+                                <button onclick="togglePageText(this)">Toon meer</button>
+                            </div>
+                            </div>
+                                <div class="hobby">
+                                <h2>Koken/Bakken</h2>
+                                <div class="pagetext">
+                                <p>Ik vind het leuk om te koken<span class="dots">...</span><span class="more"> en te bakken. Ik ben het beste in het bakken, vooral koekjes voor het koor.</span></p>
+                                <button onclick="togglePageText(this)">Toon meer</button>
+                            </div>
                         </div>
                     </div>
                 </article>
@@ -156,9 +168,9 @@
 
                 <article id="gegevens">
                     <h1>Gegevens</h1>
-                    <p>Ik woon zelf in Rijen, ook half in Ulicoten. Elke vrijdag ga ik vanuit Breda met de bus naar Baarle-Nassau, en dan ga ik met de fiets naar Ulicoten sinds dat de bussen zijn veranderd.</p>
-                    <p>Elke 2 weken heb ik op de dinsdag zangles in Rijen en elke vrijdag koor in Ulicoten. Ik heb helaas ook een chronische ziekte dus ik moet regelmatig naar het ziekenhuis in Tilburg.</p>
-                    <p>Dus als je me wil vinden, ik ben regelmatig in Breda, Rijen, Baarle-Nassau, Ulicoten en Tilburg.</p>
+                        <p>Ik woon zelf in Rijen, ook half in Ulicoten. Elke vrijdag ga ik vanuit Breda met de bus naar Baarle-Nassau, en dan ga ik met de fiets naar Ulicoten sinds dat de bussen zijn veranderd.</p>
+                        <p>Elke 2 weken heb ik op de dinsdag zangles in Rijen en elke vrijdag koor in Ulicoten. Ik heb helaas ook een chronische ziekte dus ik moet regelmatig naar het ziekenhuis in Tilburg.</p>
+                        <p>Dus als je me wil vinden, ik ben regelmatig in Breda, Rijen, Baarle-Nassau, Ulicoten en Tilburg.</p>
                     <img id="baarle" src="images/baarle-signs.jpg" alt="Baarle-Nassau">
                     <img id="music" src="images/muziekschoolplus.jpg" alt="Muziekschool Plus Rijen">
                 </article>
@@ -176,19 +188,25 @@
                 <article>
                     <h1>Rekenspelletje</h1>
 
-                    <label for="getal1">Getal 1:</label>
-                    <input type="number" id="getal1"><br><br>
+                    <div class="getallen">
+                        <label for="getal1">Getal 1:</label>
+                        <input type="number" id="getal1">
+                    </div>
 
-                    <label for="getal2">Getal 2:</label>
-                    <input type="number" id="getal2"><br><br>
+                    <div class="getallen">
+                        <label for="getal2">Getal 2:</label>
+                        <input type="number" id="getal2">
+                    </div>
 
-                    <label for="bewerking">Kies bewerking:</label>
-                    <select id="bewerking">
-                        <option value="optellen">Optellen (+)</option>
-                        <option value="aftrekken">Aftrekken (-)</option>
-                        <option value="vermenigvuldigen">Vermenigvuldigen (×)</option>
-                        <option value="delen">Delen (÷)</option>
-                    </select><br><br>
+                    <div class="getallen">
+                        <label for="bewerking">Kies bewerking:</label>
+                        <select id="bewerking">
+                            <option value="optellen">Optellen (+)</option>
+                            <option value="aftrekken">Aftrekken (-)</option>
+                            <option value="vermenigvuldigen">Vermenigvuldigen (×)</option>
+                            <option value="delen">Delen (÷)</option>
+                        </select>
+                    </div>
 
                     <button onclick="bereken()">Bereken</button>
 
@@ -222,8 +240,4 @@
             <p>&copy; 2025 Daan Fokkema & Curio Breda</p>
         </footer>
     </body>
-
 </html>
-
-
-
