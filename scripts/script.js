@@ -67,3 +67,24 @@ function resetSpel() {
 
 // Start het spel bij het laden van de pagina
 startSpel();
+
+function togglePageText(btn) {
+  // vind container van de knop
+  var container = btn.closest(".pagetext");
+  var dots = container.querySelector(".dots");
+  var moreText = container.querySelector(".more");
+
+  if (moreText.style.display === "inline") {
+    // verberg extra tekst, toon dots
+    moreText.style.display = "none";
+    dots.style.display = "inline";
+    btn.innerHTML = "Toon meer";
+  } 
+  
+  else {
+    // toon extra tekst, verberg dots
+    moreText.style.display = "inline";
+    dots.style.display = "none";
+    btn.innerHTML = "Toon minder";
+  }
+}
