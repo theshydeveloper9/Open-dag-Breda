@@ -97,7 +97,7 @@ ul{
     justify-content: space-between; /* optioneel, verdeelt tekst en afbeelding */
     align-items: center;     /* verticaal centreren */
     flex: 1; 
-    height: 330px; 
+    height: 400px; 
     padding: 10px;
     border: 1px solid #ccc;
     box-sizing: border-box;
@@ -133,4 +133,36 @@ ul{
 #choir{
     position: relative;
     left: 40%;
+}
+
+.more{
+    display: none;
+}
+
+.input-groep {
+    margin-bottom: 15px; /* ruimte tussen de rijen */
+}
+
+label {
+    display: block; /* label boven het input veld */
+    margin-bottom: 5px; /* kleine ruimte tussen label en input */
+}
+
+input, select {
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.period ul {
+    list-style-type: none; /* als je de bullets niet wilt */
+    padding: 0;
+}
+
+.period li {
+    margin-bottom: 10px; /* ruimte tussen de lijstitems */
+}
+
+.belangrijk {
+    font-weight: bold;
+    color: cyan;
 }
